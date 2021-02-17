@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Splash">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car"
+        android:id="@+id/image"
+        android:transitionName="logo_image"
+        android:layout_marginBottom="100dp">
+    </pl.droidsonroids.gif.GifImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:transitionName="logo_text"
+            android:text="Cubix"
+            android:id="@+id/name"
+            android:textColor="#090909"
+            android:textSize="40sp"
+            android:textStyle="bold"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Your Ride"
+                android:id="@+id/slogan"
+                android:textColor="#090909"
+                android:gravity="center"
+                android:transitionName="logo_text"
+                android:fontFamily="cursive"
+                android:textSize="20sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

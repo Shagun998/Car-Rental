@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.profile">
+
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/car"
+        android:label="Cubix"
+        android:roundIcon="@mipmap/car"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".signUp" />
+        <activity android:name=".rentmycar" />
+        <activity android:name=".selectCar" />
+        <activity android:name=".Bookcar" />
+<activity android:name=".SignInCust"/>
+        <activity android:name=".VerifyPhone"></activity>
+        <activity android:name=".Reset" />
+        <activity android:name=".Register" />
+
+        <activity android:name=".Payment"/>
+        <activity android:name=".Support"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Login"/>
+            <activity android:name=".Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
